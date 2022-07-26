@@ -2,7 +2,7 @@
 After download helm go to this repo location in in your local machine write\
 `helm install release1 .` to start the app and its environment \
 then check your `minikube ip` and write it in the browser followed by `:30002`\
-![This is an image](/myapp/images/python_run.png))\
+![This is an image](/images/python_run.png))\
 ## use Jenkins using helm ##
 - get the repo 
 
@@ -21,7 +21,7 @@ change `type` to `NodePort` and add `nodePort: 30010` in containers port section
 
 - get the minikube ip by using this command `minikube ip`.
 - go to the browser and write this url `minikube-ip:30010` jenkins login page will appear
-![This is an image](/myapp/images/jenkins_login.png) 
+![This is an image](/images/jenkins_login.png) 
 
 - get admin password by type \
 `echo $(kubectl get secret --namespace default myjenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode)` 
