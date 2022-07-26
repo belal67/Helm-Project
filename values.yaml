@@ -1,0 +1,23 @@
+deployment: 
+  name: "mydeploy"
+  label: "mydeploy"
+  replicaCount: 1
+
+image:
+  repository: belalhany/devops_challenge
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 8000
+  port2: 6379
+
+resources: 
+  containers:
+    name:  my-container
+    
+
+
+
+ 
